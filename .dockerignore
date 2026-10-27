@@ -1,0 +1,40 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Gradle local outputs
+.gradle
+.gradle-ci
+build
+**/build
+
+# IDE / OS
+.idea
+.vscode
+.DS_Store
+**/.DS_Store
+*.iml
+
+# Local configuration and secrets
+.env
+.env.*
+config/
+**/*secret*
+**/*credential*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local archives
+*.zip
+
+# CI and local documentation
+Jenkinsfile
+README.md
+HELP.md
+
+# Build definitions not needed inside image
+mise.toml
+gradlew.bat

@@ -1,3 +1,6 @@
 spring:
   application:
     name: blue.admin_auth
+
+server:
+  port: ${SERVER_PORT:12200}
