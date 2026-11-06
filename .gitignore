@@ -40,3 +40,4 @@ out/
 /config/application-dev.yaml
 .DS_Store
 **/.DS_Store
+secrets/
