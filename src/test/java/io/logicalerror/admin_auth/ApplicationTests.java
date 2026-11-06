@@ -1,5 +1,6 @@
 package io.logicalerror.admin_auth;
 
+import io.logicalerror.admin_auth.support.AbstractPostgresIntegrationTest;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -14,7 +15,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 @AutoConfigureMockMvc
 @ActiveProfiles("test")
-class ApplicationTests {
+class ApplicationTests
+        extends AbstractPostgresIntegrationTest {
 
     @Autowired
     private MockMvc mockMvc;

@@ -1,6 +1,19 @@
 spring:
   application:
     name: blue.admin_auth
+  datasource:
+    url: ${AUTH_DB_URL}
+    username: ${AUTH_DB_RUNTIME_USER}
+    password: ${AUTH_DB_RUNTIME_PASSWORD}
+  flyway:
+    enabled: true
+    url: ${AUTH_DB_URL}
+    user: ${AUTH_DB_MIGRATION_USER}
+    password: ${AUTH_DB_MIGRATION_PASSWORD}
+    locations:
+      - classpath:db/migration
+    clean-disabled: true
+    validate-on-migrate: true
 
 server:
   port: ${SERVER_PORT:12200}
